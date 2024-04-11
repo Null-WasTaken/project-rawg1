@@ -20,9 +20,9 @@ export default function Card() {
           {items.map(item => {
               return (
                   <div className="w-35e rounded-2xl mt-3 h-25e bg-secondary">
-                      <img src={item.background_image} className="w-full rounded-2xl h-100px" alt=""/>
-                      <h1 className="text-3xl text-maincolor p-4">{item.name}</h1>
-                      <span className="p-5">{item.rating}</span>
+                      <img src={item['background_image']} className="w-full rounded-2xl h-100" alt=""/>
+                      <h1 className="text-3xl text-maincolor p-4">{item['name']}</h1>
+                      <span className="p-5">{item['rating']}</span>
                   </div>
               )
           })}

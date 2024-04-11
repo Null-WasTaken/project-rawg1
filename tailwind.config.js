@@ -25,7 +25,8 @@ export default {
       },
 
       height : {
-        '25e' : "430px"
+        '25e' : "430px",
+        '100' : "270px"
       },
       backgroundColor : {
         'altbg' : '#3a3a3a',
