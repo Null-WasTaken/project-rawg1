@@ -13,7 +13,6 @@ export default function Card() {
        })
     }, []);
 
-    console.log(items)
     return (
       <>
 
@@ -22,7 +21,8 @@ export default function Card() {
                   <div className="w-35e rounded-2xl mt-3 h-25e bg-secondary">
                       <img src={item['background_image']} className="w-full rounded-2xl h-100" alt=""/>
                       <h1 className="text-3xl text-maincolor p-4">{item['name']}</h1>
-                      <span className="p-5">{item['rating']}</span>
+                      <span className="p-5 text-maincolor text-sm font-light">{item['rating']}</span>
+                      <a className="block p-5 ml-44 text-maincolor bg-alt w-44 text-center rounded ease-in-out" href="#">Learn More!</a>
                   </div>
               )
           })}
